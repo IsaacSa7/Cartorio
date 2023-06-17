@@ -168,3 +168,59 @@ body{
     display: flex;
     justify-content: center;
 }
+
+
+/*Tela de Cartório*/
+.header {
+      text-align: center;
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      margin: 0;
+    }
+
+    .header h1 {
+      font-size: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    .form-group .inline-inputs {
+      display: flex;
+      align-items: center;
+    }
+
+    .form-group .inline-inputs label {
+      margin-right: 10px;
+    }
+
+    .form-group .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    /*Tela Natimorto e Nativivo*/
+    .buttons button {
+        padding: 8px 20px;
+        font-size: 16px;
+        background-color: rgb(185, 185, 190);
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+      }

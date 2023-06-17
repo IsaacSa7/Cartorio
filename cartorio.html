@@ -1,62 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .header {
-      text-align: center;
-      background-color: blue;
-      color: white;
-      padding: 10px;
-      margin: 0;
-    }
-
-    .header h1 {
-      font-size: 20px;
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 5px;
-      font-size: 16px;
-    }
-
-    .form-group .inline-inputs {
-      display: flex;
-      align-items: center;
-    }
-
-    .form-group .inline-inputs label {
-      margin-right: 10px;
-    }
-
-    .form-group .buttons {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="header">
-    <h1>CARTÓRIO FIRMAMENTO</h2>
-  </div>
+  <div id="topo">
+    <img src="./fotos/licenciamento.png" alt="" id="logo">
+    CARTÓRIO FIRMAMENTO
+</div><br><br>
   <div class="container">
-    <h2>Certidão de Nascimento</h2>
+    <div class="titulo">
+      <p id="titulo">CERTIDÃO DE NASCIMENTO</p>
+    </div>
     <form>
       <div class="form-group">
         <label for="nome">Nome:</label>
@@ -148,11 +103,20 @@
       <div class="form-group buttons">
 
       </div>
+      <div id="botoes">
+        <a href="./segundaTela.html"><div class="botao" id="btnVoltar" style="margin-left: 10%;">
+            Voltar
+        </div></a>
+        <div class="botao"  type="reset" style="margin-left: 3%;">
+            Limpar
+        </div> 
+        <div class="botao" onclick="salvar()" style="margin-left: 3%;">
+            Salvar
+        </div>         
+      </div>
+
     </form>
   </div>
-  <a href="./segundaTela.html"><button type="button">Voltar</button></a>
-  <button type="reset" >Limpar</button>
-  <button id="btn_salvar" onclick="salvar()">Salvar</button>
   <script src="./script.js"></script>
 </body>
 </html>
